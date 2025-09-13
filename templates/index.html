@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema - Compra de Ingressos</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container-main">
+        <form action="/compra" method="post">
+            <span>🎬 Compra de Ingressos</span>
+
+            <div class="container-input container-interno">
+                <!-- Escolher filme -->
+                <label for="filme">Escolha o filme:</label>
+                <select name="filme" id="filme" required>
+                    <option value="">Selecione</option>
+                    <option value="Vingadores">Vingadores</option>
+                    <option value="Batman">Batman</option>
+                    <option value="Super Mario Bros">Super Mario Bros</option>
+                    <option value="Interestelar">Interestelar</option>
+                </select>
+
+                <!-- Quantidade de ingressos -->
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" name="quantidade" id="quantidade" min="1" max="10" required>
+            </div>
+
+            <div class="container-button container-interno">
+                <input type="submit" value="Comprar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
