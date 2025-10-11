@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema - Cadastro de Cliente</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container-main">
+        <form action="/cadastro" method="post">
+            <span>🧾 Cadastro de Cliente</span>
+
+            <div class="container-input container-interno">
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Ex: São Paulo" required>
+            </div>
+
+            <div class="container-button container-interno">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
