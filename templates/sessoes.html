@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema - Sessões</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container-main">
+        <form action="/sessoes" method="post">
+            <span>🎥 Escolha a Sessão</span>
+
+            <div class="container-input container-interno">
+                <label for="horario">Horário:</label>
+                <select name="horario" id="horario" required>
+                    <option value="">Selecione</option>
+                    <option value="14:00">14:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="20:00">20:00</option>
+                </select>
+
+                <label for="sala">Sala:</label>
+                <select name="sala" id="sala" required>
+                    <option value="">Selecione</option>
+                    <option value="Sala 1">Sala 1</option>
+                    <option value="Sala 2">Sala 2</option>
+                    <option value="Sala 3">Sala 3</option>
+                </select>
+            </div>
+
+            <div class="container-button container-interno">
+                <input type="submit" value="Confirmar Sessão">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
