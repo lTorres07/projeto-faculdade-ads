@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo da Compra</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="container-interno">
+            <span>📄 Resumo da Compra</span>
+
+            <p><strong>Filme:</strong> {{ ingresso.filme }}</p>
+            <p><strong>Quantidade:</strong> {{ ingresso.quantidade }}</p>
+            <p><strong>Tipo:</strong> {{ pagamento.tipo }}</p>
+            <p><strong>Sala:</strong> {{ sessao.sala }}</p>
+            <p><strong>Horário:</strong> {{ sessao.horario }}</p>
+            <p><strong>Valor Total:</strong> R$ {{ pagamento.valor_total }}</p>
+        </div>
+    </div>
+</body>
+</html>

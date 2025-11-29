@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container-main">
-        <form action="/sessoes" method="post">
+        <form action="{{ url_for('sessoes', ingresso_id=ingresso_id) }}" method="post">
             <span>🎥 Escolha a Sessão</span>
 
             <div class="container-input container-interno">

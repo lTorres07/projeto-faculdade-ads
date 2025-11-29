@@ -23,7 +23,7 @@ body {
     width: 90%;
 }
 
-form {
+form, .container-interno {
     display: flex;
     flex-direction: column;
     justify-content: center;
